@@ -1,0 +1,101 @@
+body {
+    background-image: url(cube.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: #f3fbfc;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+header {
+    text-align: center;
+    background-image: url(footer2.jpeg);
+    color: #f4f6f7;
+    padding: 20px;
+    border-bottom: 2px solid #295255;
+    position: relative;
+    width: 100%;
+    box-shadow: 0 0 15px rgba(0, 240, 255, 0.5);
+}
+
+.profile-picture {
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto;
+    animation: rotate 10s linear infinite;
+    border: 5px solid #f1eeee;
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+h1 {
+    color: #f1f8f8;
+    font-size: 2.5em;
+    margin: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: .15em solid #36d5e0;
+    animation: typing 4s steps(40, end) forwards;
+    text-shadow: 0 0 10px #2d9097;
+}
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+}
+p {
+    color: #eff0f0; 
+    font-size: 1.2em;
+    margin: 10px 0 0;
+    text-shadow: 0 0 10px #00f0ff;
+}
+
+h2 {
+    color: #1dfafa;
+    text-shadow: 0 0 10px #e5ebec;
+}
+
+section {
+    padding: 20px;
+}
+
+footer {
+    background-color: #000000;
+    color: #ebf3f3;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0 0 15px rgba(0, 240, 255, 0.5);
+}
+#skills-section {
+    display: none;
+}
+
+button {
+    background-color: #18b913;
+    color: #e4e9e9;
+    border: 1px solid #eef4f5;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 1em;
+    border-radius: 5px;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+button:hover {
+    background-color: #2ccece;
+    color: #333333;
+}
